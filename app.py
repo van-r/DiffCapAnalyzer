@@ -1,10 +1,10 @@
 import ast
 import base64
 import dash
-import dash_core_components as dcc
+from dash import dcc
 from dash.dependencies import Input, Output, State
-import dash_html_components as html
-import dash_table as dt
+from dash import html
+from dash import dash_table as dt
 import io
 import json
 from lmfit.model import load_modelresult
@@ -642,4 +642,4 @@ def update_link_3(value):
 # app.scripts.config.serve_locally = False
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run(debug=True)

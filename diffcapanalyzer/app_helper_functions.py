@@ -1,9 +1,9 @@
 import ast
 import dash
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dcc
+from dash import html
 from dash.dependencies import Input, Output, State
-import dash_table_experiments as dt
+from dash import dash_table as dt
 import io
 import json
 from lmfit.model import load_modelresult
